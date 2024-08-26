@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsivedesign/widgets/navmanu.dart';
 import 'package:responsivedesign/widgets/responsive_builder.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,70 +14,57 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    return ResponsiveBuilder(mobile: Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: const Text('Responsive Design'),
       ),
-      drawer: const Drawer(
-        child: SafeArea(
-          child: Column(
-            children: [
-              ListTile(
-                title: Text('Home'),
-              ),
-              ListTile(
-                title: Text('Products'),
-              ),
-              ListTile(
-                title: Text('Bills'),
-              ),
-            ],
-          ),
-        ),
+      drawer: const NavManu(),
+      body:  ResponsiveBuilder(
+
+        /// this is mobile screen
+        mobile: _buildMobileScreenLayout(),
+
+
+        /// this is tablet Screen
+        tablet: _buildTabletScreenLayout(),
+
+        /// this is Desktop Screen
+        desktop: _buildDesktopScreenLayout(),
       ),
-      body: const ResponsiveBuilder(
-        mobile: Center(
-          child: Text(
-            'This is Mobile Screen',
-          ),
-        ),
-        tablet: Center(
-          child: Text(
-            'This is Tablet Screen',
-          ),
-        ),
-        desktop: Center(
-          child: Text(
-            'This is Desktop Screen',
-          ),
-        ),
-      ),
-    ), desktop: Scaffold(
-      appBar: AppBar(
-        title: const Text('Responsive Design'),
-      ),
-      body: Row(
-        children: [
-          const Drawer(
-            child: SafeArea(
-              child: Column(
-                children: [
-                  ListTile(
-                    title: Text('Home'),
-                  ),
-                  ListTile(
-                    title: Text('Products'),
-                  ),
-                  ListTile(
-                    title: Text('Bills'),
-                  ),
-                ],
+    );
+  }
+
+  Widget _buildDesktopScreenLayout() {
+    return Scaffold(
+        body: Row(
+          children: [
+            NavManu(),
+            Expanded(
+                child: Center(
+              child: Text(
+                'Form Desktop',
               ),
-            ),
-          ),
-           Expanded(child: Center(child: Text('Form Desktop',),))
-        ],
-      ),
-    ));
+            ))
+          ],
+        ),
+      );
+  }
+
+  Widget _buildTabletScreenLayout() {
+    return Scaffold(
+        body: Center(
+          child: Text("This is Tablet Screen"),
+        ),
+      );
+  }
+
+  Widget _buildMobileScreenLayout() {
+    return Scaffold(
+        body: Center(
+          child: Text("This is Mobile Screen"),
+        ),
+      );
   }
 }
+
+
