@@ -36,7 +36,7 @@ Here are some screenshots demonstrating the responsive design of the application
 
 
 ### Tablet Layout
-![Tablet View](https://github.com/user-attachments/assets/3fdaad40-d01d-46be-9821-0d189166c2ef)
+https://github.com/user-attachments/assets/3fdaad40-d01d-46be-9821-0d189166c2ef
 
 ### Desktop View Layout
 ![Web view](https://github.com/user-attachments/assets/92ee2c96-faf5-427a-adec-14b4273d83df)
