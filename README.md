@@ -1,8 +1,3 @@
-Sure! Here’s an updated version of the README file with an added section for output images:
-
-```markdown
-# Responsive Design Flutter Project
-
 ## Overview
 
 This Flutter project demonstrates a responsive design approach for mobile, tablet, and desktop layouts. It utilizes the `ResponsiveBuilder` widget to adapt the user interface based on the screen size, ensuring a seamless experience across different devices.
@@ -43,7 +38,7 @@ Here are some screenshots demonstrating the responsive design of the application
 ![Web view](https://github.com/user-attachments/assets/92ee2c96-faf5-427a-adec-14b4273d83df)
 
 
-*Note: Replace `path/to/...` with the actual paths to your images.*
+
 
 ## Getting Started
 
@@ -68,7 +63,7 @@ Here are some screenshots demonstrating the responsive design of the application
 3. Run the application:
    ```bash
    flutter run
-   ```
+  ```
 
 ### Usage
 
