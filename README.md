@@ -31,14 +31,15 @@ This Flutter project demonstrates a responsive design approach for mobile, table
 
 Here are some screenshots demonstrating the responsive design of the application across different devices:
 
-### Mobile Layout
+# Mobile Layout
 ![Mobiel View](https://github.com/user-attachments/assets/16688fc9-2a54-4e1e-a7d0-dcbb2a179046)
 
 
-### Tablet Layout
-https://github.com/user-attachments/assets/3fdaad40-d01d-46be-9821-0d189166c2ef
+# Tablet Layout
+![Tablet View](https://github.com/user-attachments/assets/a26875c2-4af7-4e93-91fd-ecce1e256a6a)
 
-### Desktop View Layout
+
+# Desktop View Layout
 ![Web view](https://github.com/user-attachments/assets/92ee2c96-faf5-427a-adec-14b4273d83df)
 
 
