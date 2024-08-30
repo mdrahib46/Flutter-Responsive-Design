@@ -25,7 +25,7 @@ class ResponsiveDesign extends StatelessWidget {
               fontWeight: FontWeight.bold
           ),
           bodyMedium: GoogleFonts.roboto(
-            fontSize: 20,
+            fontSize: 16,
           )
         ),
        ),

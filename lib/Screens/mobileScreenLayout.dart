@@ -37,11 +37,11 @@ class MobileScreenLayout extends StatelessWidget {
                 // _getSummarySection(crossAxisCount: 1, ratio: 2.4),
                  Text(
                   TextUtils.bodyTitleText1,
-                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.w800),
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
                  Text(
                  TextUtils.bodyTitleText2,
-                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.w800),
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
                  Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30.0),

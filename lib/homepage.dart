@@ -3,7 +3,6 @@ import 'package:responsivedesign/Screens/tabletScreenLayout.dart';
 import 'package:responsivedesign/widgets/appbarTitleTextCard.dart';
 import 'package:responsivedesign/widgets/appbarmanu.dart';
 import 'package:responsivedesign/widgets/responsive_builder.dart';
-
 import 'Screens/mobileScreenLayout.dart';
 import 'Utils/textUtils.dart';
 
@@ -29,20 +28,6 @@ class _HomePageState extends State<HomePage> {
         desktop: _buildDesktopLayout());
   }
 
-  /// tablet Screen Builder
-  // Widget _buildTabletLayout() {
-  //   return Scaffold(
-  //     appBar: AppBar(
-  //       titleSpacing: 40,
-  //       title: AppBarManu(),
-  //     ),
-  //     drawer: NavManu(),
-  //
-  //     body:  TabletScreenLayout(size: size)
-  //   );
-  // }
-
-
 /// Desktop  Scree Builder
   Widget _buildDesktopLayout() {
     return  Scaffold(
@@ -57,7 +42,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-        body:   _getSummarySection()
+        body:   _getDesktopSummarySection()
         );
   }
 
@@ -106,8 +91,8 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _getSummarySection(){
-    return GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),children: [
+  Widget _getDesktopSummarySection(){
+    return GridView(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),children: [
       _homePageTextSummaryCard(),
       _homePageButtonCard()
     ],);
