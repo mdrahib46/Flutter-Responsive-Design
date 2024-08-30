@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsivedesign/widgets/customElevatedButton.dart';
 import '../Utils/textUtils.dart';
 import '../widgets/appbarTitleTextCard.dart';
 import '../widgets/appbarmanu.dart';
@@ -47,22 +48,7 @@ class TabletScreenLayout extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 50),
-                SizedBox(
-                  height: 40,
-                  width: size.width / 3,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.green,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        )),
-                    child: const Text(
-                      'data',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                )
+                CustomElevatedButton(size: size),
               ],
             ),
           ),

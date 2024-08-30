@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../Utils/textUtils.dart';
 import '../widgets/appbarTitleTextCard.dart';
+import '../widgets/customElevatedButton.dart';
 import '../widgets/navmanu.dart';
 
 class MobileScreenLayout extends StatelessWidget {
@@ -48,22 +49,7 @@ class MobileScreenLayout extends StatelessWidget {
                   child: Text(TextUtils.bodyDecText, textAlign: TextAlign.center,),
                 ),
                 const SizedBox(height: 50),
-                SizedBox(
-                  height: 40,
-                  width: size.width / 3,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.green,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        )),
-                    child: const Text(
-                      'data',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                )
+                CustomElevatedButton(size: size)
               ],
             ),
           ),
@@ -71,4 +57,6 @@ class MobileScreenLayout extends StatelessWidget {
     );
   }
 }
+
+
 
